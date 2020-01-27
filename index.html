@@ -36,89 +36,15 @@
         <!-- Os itens deverão ser gerados mais tarde por uma função em javascript-->
         <div id="home" class="d-block pt-1 pb-5 bg-light">
             <h3 class="ml-5 my-3 font-weight-bold">Nossos Cursos</h3>
-            <div id="card_carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row d-flex justify-content-center">
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row d-flex justify-content-center">
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="row d-flex justify-content-center">
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                        <div class="card mx-2" style="width: 18rem;">
-                            <img src="https://i.udemycdn.com/course/480x270/1344866_5c41.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Curso de HTML, CSS e JS</h5>
-                                <p class="card-text">Por apenas R$ 49,99</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="card_carousel">
+                  <!--ver o arquivo js/curses.offer.js-->
                 </div>
-                <a class="carousel-control-prev text-dark" href="#card_carousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev text-dark" href="#carousel" role="button" data-slide="prev">
                     <i class="fas fa-chevron-left fa-5x"></i>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next text-dark" href="#card_carousel" role="button" data-slide="next">
+                <a class="carousel-control-next text-dark" href="#carousel" role="button" data-slide="next">
                     <i class="fas fa-chevron-right fa-5x"></i>
                     <span class="sr-only">Next</span>
                 </a>
@@ -142,9 +68,8 @@
             </div>
         </div>
         <!-- Seção dos comentários -->
-        <!-- Os cards deverão ser gerados mais tarde por uma função em javascript-->
         <div id="comentarios" class="container-fluid p-5 bg-light" >
-            
+            <!--ver o arquivo js/comment.area.js-->
         </div>
         <!-- Footer -->
         <footer class="page-footer font-small bg-dark text-light pt-4">
@@ -191,5 +116,6 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/comment.area.js"></script>
+        <script src="js/curses.offer.js"></script>
     </body>
 </html>
