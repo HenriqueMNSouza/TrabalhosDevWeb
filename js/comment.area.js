@@ -43,7 +43,7 @@ function generateComments(list){
     }
     _comments =  _comments+ "</div>";
 
-    return _title+ _comments;
+    return _title + _comments;
 }
 
 // Aqui estão os 4 comentários. Mais tarde deverão ser gerados por um arquivo json
