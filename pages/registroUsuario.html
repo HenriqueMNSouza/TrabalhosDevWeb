@@ -17,7 +17,7 @@
                         </a>
                     </li>
                     <li class="nav-item ml-2">
-                        <a class="nav-link text-light" href="#">Sobre</a>
+                        <a class="nav-link text-light" href="sobre.html">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="../index.html#comentarios">Comentários</a>
@@ -26,28 +26,57 @@
             </div>
             <!-- Bloco de botões de login e senha -->
             <div class="mr-5">
-                <button type="button" class="btn btn-light text-primary" onclick="window.location.href='registro.html'">Registro</button>
+				<button type="button" class="btn btn-light text-primary" onclick="#">Registro</button>
                 <button type="button" class="btn btn-outline-light ml-1" onclick="window.location.href='login.html'">Login</button>
             </div>
         </nav>
 
-        <!--Conteúdo de Sobre da empresa-->
-        <div id="sobre" class="container-fluid px-5 py-3">
-            <h2 class="font-weight-bold">Sobre Nós</h2>
-            <h4 class="font-weight-bold pl-3">Missão</h4>
-            <p class="pl-5">Nossa missão é de oferecer os melhores cursos, de forma tal que os nossos alunos consigam transformar não só a sua própria realidade, mas de toda a comunidade ao seu redor.  </p>
+        <div class="container">
+		<br><br>
+			<form id="formulario">
+				<div class="form-group row">
+					<label for="user_name" class="col-sm-2 col-form-label">Nome</label>
+					<div class="col-sm-10">
+						<input class="form-control" id="user_name" placeholder="Seu nome">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="nick_name" class="col-sm-2 col-form-label">Apelido</label>
+					<div class="col-sm-10">
+						<input class="form-control" id="nick_name" placeholder="Usado para login">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="email_usuario" class="col-sm-2 col-form-label" >Email: </label>
+					<div class="col-sm-10">
+						<input type="email" name="email" class="form-control" id="email_usuario" placeholder="name@example.com">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputPassword" class="col-sm-2 col-form-label">Senha: </label>
+					<div class="col-sm-10">
+					  <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="reinputPassword" class="col-sm-2 col-form-label">Re-Senha</label>
+					<div class="col-sm-10">
+						<input type="password" name="password" class="form-control" id="reinputPassword" placeholder="Password">
+					</div>
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="ck_termos">
+					<label class="form-check-label" for="ck_termos" name="ck_contrato">Concordo com os termos do contrato</label>
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="ck_anuncios" checked>
+					<label class="form-check-label" for="ck_anuncios" >Gostaria de receber e-mails com promoções</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Enviar</button>
 
-            <h4 class="font-weight-bold pl-3">Visão</h4>
-            <p class="pl-5">Nós queremos nos tornar referência em oferecer cursos EAD de qualidade na América Latina.</p>
-
-            <h4 class="font-weight-bold pl-3">Valores</h4>
-            <p class="pl-5">Nós sempre prezaremos a qualidade dos nossos cursos. Não somente a forma de repassar o conteúdo, mas também manter o conteúdo sempre atualizado com a realidade da América Latina e do Mundo.</p>
-        </div>
-        <!--Seção onde mostraremos a equipe de instrutores-->
-        <div id="instrutores" class="container-fluid bg-primary text-center py-3">
-            <!--Consultar o arquivo ../js/instructor.area.js-->
-        </div>
-
+			 </form>
+		<br><br>
+		</div>
         <!-- Footer -->
         <footer class="page-footer font-small bg-dark text-light pt-4">
             <div class="container-fluid text-center text-md-left">
@@ -90,8 +119,30 @@
             </div>
         </footer>
         <script src="../js/jquery-3.4.1.slim.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
         <script src="../js/popper.min.js"></script>
         <script src="../js/bootstrap.js"></script>
-        <script src="../js/instructor.area.js"></script>
+        
+		<script> 
+			
+			$(document).ready(function(){
+			$("#formulario").validate({
+			   rules: { 
+					email: 			{ required: true },
+					password: 		{ required: true, minlength: 3, maxlength: 8 },
+					ck_contrato: 	{ required: true }
+			   },
+			   messages: {
+					email: { 	required: " Email - obrigatório"
+					},
+					password: {
+								required: " Senha - obrigatoria",
+								minlength: " A senha de possuir no minimo 4 letras",
+								maxlength: " A senha não deve possuir mais de 8 caracteres"}
+					},
+					ck_contrato:{ required: " Os termos devem ser aceitos para prosseguir." }
+			});
+		});
+		</script>
     </body>
 </html>

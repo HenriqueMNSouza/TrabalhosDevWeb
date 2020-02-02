@@ -1,0 +1,202 @@
+<!DOCTYPE html!>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+        <title>A+ Cursos - Sobre Nós</title>
+    </head>
+
+    <body>
+        <nav class="shadow navbar navbar-expand navbar-light bg-primary">
+            <!-- Menu de Seleção de Página -->
+            <div class="collapse navbar-collapse ml-5">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-brand" href="../index.html">
+                            <img src="../img/logo.png" width="40" height="40" alt="logo"/>
+                        </a>
+                    </li>
+                    <li class="nav-item ml-2">
+                        <a class="nav-link text-light" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../index.html#comentarios">Comentários</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Bloco de botões de login e senha -->
+            <div class="mr-5">
+				<button type="button" class="btn btn-light text-primary" onclick="window.location.href='registro.html'">Registro</button>
+                <button type="button" class="btn btn-outline-light ml-1" onclick="window.location.href='login.html'">Login</button>
+            </div>
+        </nav>
+
+        <div class="container">
+		<br><br>
+			<form id="formulario">
+				<div class="form-group row">
+					<label for="cpf" class="col-sm-2 col-form-label">*CPF: </label>
+					<div class="col-sm-10">
+						<input name="cpf" class="form-control" id="cpf" placeholder="000.000.000-00">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="user_name" class="col-sm-2 col-form-label">*Nome: </label>
+					<div class="col-sm-10">
+						<input class="form-control" id="user_name" placeholder="Seu nome">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="nick_name" class="col-sm-2 col-form-label">*Apelido: </label>
+					<div class="col-sm-10">
+						<input class="form-control" id="nick_name" placeholder="Usado para login">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="email_usuario" class="col-sm-2 col-form-label" >*Email: </label>
+					<div class="col-sm-10">
+						<input type="email" name="email" class="form-control" id="email_usuario" placeholder="name@example.com">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="celular" class="col-sm-2 col-form-label">*Celular: </label>
+					<div class="col-sm-10">
+						<input name="celular" class="form-control" id="celular" placeholder="(00) 0000-0000">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="inputPassword" class="col-sm-2 col-form-label">*Senha: </label>
+					<div class="col-sm-10">
+					  <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+					</div>
+				</div>
+			
+				<div class="form-group row">
+					<label for="endereco" class="col-sm-2 col-form-label">Endereço: </label>
+					<div class="col-sm-10">
+						<input name="endereco" class="form-control" id="endereco" placeholder="Rua, Numero, etc...">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="cidade" class="col-sm-2 col-form-label">Cidade: </label>
+					<div class="col-sm-10">
+						<input name="cidade" class="form-control" id="cidade" placeholder="Cidade">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="bairro" class="col-sm-2 col-form-label">Bairro: </label>
+					<div class="col-sm-10">
+						<input name="bairro" class="form-control" id="bairro" placeholder="Bairro">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="cep" class="col-sm-2 col-form-label">CEP: </label>
+					<div class="col-sm-10">
+						<input name="cep" class="form-control" id="cep" placeholder="00000-000">
+					</div>
+				</div>
+				
+				<button type="submit" class="btn btn-primary">Enviar</button>
+
+			 </form>
+		<br><br>
+		</div>
+        <!-- Footer -->
+        <footer class="page-footer font-small bg-dark text-light pt-4">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <!-- Coluna do Nome e Endereço da "Empresa" -->
+                    <div class="col-md-6 mt-3 ml-5">
+                        <h5 class="text-uppercase">A+ Cursos</h5>
+                        <p>Endereço: Avenida Rio Branco, 324, Centro, Niterói-RJ.</p>
+                    </div>
+
+                    <!-- Espaço Horizontal -->
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Coluna do Mapa do Site -->
+                    <div class="col-md-3 mt-3 mb-3">
+                        <h5 class="text-uppercase">Mapa do Site</h5>
+                        <ul class="list-unstyled ">
+                            <li>
+                                <a class="text-light" href="../index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="text-light" href="#">Sobre</a>
+                            </li>
+                            <li>
+                                <a  class="text-light" href="../index.html#comentarios">Comentários</a>
+                            </li>
+                            <li>
+                                <a  class="text-light" href="#">Registro</a>
+                            </li>
+                            <li>
+                                <a  class="text-light" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer do Copyright -->
+            <div class="footer-copyright text-center py-3 bg-secondary">© 2020 Copyright:
+                <a class="text-dark" href="#"> Ricardo de Monteiro e Henrique</a>
+            </div>
+        </footer>
+        <script src="../js/jquery-3.4.1.slim.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
+		<script src="../js/jquery.mask.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        
+		<script> 
+			
+			$(document).ready(function(){
+			$("#cep").mask("00000-000");
+			$("#cpf").mask("000.000.000-00");
+			$("#celular").mask("(00) 00000-0000");
+			
+			$("#formulario").validate({
+			   rules: { 
+					nome: 			{ required: true, minlength: 3, maxlength: 50 },
+					login: 			{ required: true, minlength: 3, maxlength: 50 },
+					password: 		{ required: true, minlength: 3, maxlength: 255 },
+					cpf: 			{ required: true, maxlength: 11 },
+					email:     		{ required: true, minlength: 3, maxlength: 50 },
+					celular:		{ required: true, minlength: 12, maxlength: 14 },
+					endereco:		{ maxlength: 50 },
+					cidade:			{ maxlength: 30},
+					bairro:			{ maxlength: 30},
+					cep:			{ maxlength: 9}
+
+			   },
+			   messages: {
+					
+					nome: 			{ required: " Nome - Obrigatório",
+									  minlength: " O nome necessita ter mais de 3 caracteres",
+									  maxlength: " A senha não pode ultrapassar 50 caracteres"									  
+									 },
+									  
+					login: 			{ required: " Login - Obrigatório",
+									  minlength: " O login necessita ter mais de 3 caracteres",
+									  maxlength: " A senha não pode ultrapassar 50 caracteres"									  
+									  },
+									  
+					password: 		{ required: " Senha - Obrigatória",
+									  minlength: " A senha necessita ter mais de 3 caracteres",
+									  maxlength: " A senha não pode ultrapassar 255 caracteres"
+					},
+					cpf: 			{ required: "Campo Obrigatório", maxlength: "Maximo de 11 caracteres" },
+					email:     		{ required: "Campo Obrigatório", minlength: "Mínimo de 3 caracteres", maxlength: "Maximo de 50 caracteres" },
+					celular:		{ required: "Campo Obrigatório", minlength: "Mínimo de 3 caracteres", maxlength: "Maximo de 14 caracteres" },
+					endereco:		{ maxlength: "Maximo de 50 caracteres" },
+					cidade:			{ maxlength: "Maximo de 30 caracteres"},
+					bairro:			{ maxlength: "Maximo de 30 caracteres"},
+					cep:			{ maxlength: "Maximo de 9 caracteres"}
+			}});
+		});
+		</script>
+    </body>
+</html>

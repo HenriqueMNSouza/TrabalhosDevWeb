@@ -17,7 +17,7 @@
                         </a>
                     </li>
                     <li class="nav-item ml-2">
-                        <a class="nav-link text-light" href="#">Sobre</a>
+                        <a class="nav-link text-light" href="sobre.html">Sobre</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" href="../index.html#comentarios">Comentários</a>
@@ -26,28 +26,54 @@
             </div>
             <!-- Bloco de botões de login e senha -->
             <div class="mr-5">
-                <button type="button" class="btn btn-light text-primary" onclick="window.location.href='registro.html'">Registro</button>
+				<button type="button" class="btn btn-light text-primary" onclick="window.location.href='registro.html'">Registro</button>
                 <button type="button" class="btn btn-outline-light ml-1" onclick="window.location.href='login.html'">Login</button>
             </div>
         </nav>
 
-        <!--Conteúdo de Sobre da empresa-->
-        <div id="sobre" class="container-fluid px-5 py-3">
-            <h2 class="font-weight-bold">Sobre Nós</h2>
-            <h4 class="font-weight-bold pl-3">Missão</h4>
-            <p class="pl-5">Nossa missão é de oferecer os melhores cursos, de forma tal que os nossos alunos consigam transformar não só a sua própria realidade, mas de toda a comunidade ao seu redor.  </p>
+        <div class="container">
+		<br><br>
+			<form id="formulario">
+				<div class="form-group row">
+					<label for="nome" class="col-sm-2 col-form-label">*Nome: </label>
+					<div class="col-sm-10">
+						<input name="name" class="form-control" id="nome" placeholder="Name">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="user_name" class="col-sm-2 col-form-label">Requisito: </label>
+					<div class="col-sm-10">
+						<input class="form-control" id="requisito" placeholder="Requirement">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="user_name" class="col-sm-2 col-form-label">Ementa: </label>
+					<div class="col-sm-10">
+						<input class="form-control" id="ementa" placeholder="Menu">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="user_name" class="col-sm-2 col-form-label">Carga Horaria: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="carga_horaria" placeholder="Workload">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="user_name" class="col-sm-2 col-form-label">Preço: </label>
+					<div class="col-sm-10">
+						<input type="number" min="0.00" class="form-control" id="preco" placeholder="Price">
+					</div>
+				</div>
+				
+				<button type="submit" class="btn btn-primary">Enviar</button>
 
-            <h4 class="font-weight-bold pl-3">Visão</h4>
-            <p class="pl-5">Nós queremos nos tornar referência em oferecer cursos EAD de qualidade na América Latina.</p>
-
-            <h4 class="font-weight-bold pl-3">Valores</h4>
-            <p class="pl-5">Nós sempre prezaremos a qualidade dos nossos cursos. Não somente a forma de repassar o conteúdo, mas também manter o conteúdo sempre atualizado com a realidade da América Latina e do Mundo.</p>
-        </div>
-        <!--Seção onde mostraremos a equipe de instrutores-->
-        <div id="instrutores" class="container-fluid bg-primary text-center py-3">
-            <!--Consultar o arquivo ../js/instructor.area.js-->
-        </div>
-
+			 </form>
+		<br><br>
+		</div>
         <!-- Footer -->
         <footer class="page-footer font-small bg-dark text-light pt-4">
             <div class="container-fluid text-center text-md-left">
@@ -90,8 +116,22 @@
             </div>
         </footer>
         <script src="../js/jquery-3.4.1.slim.min.js"></script>
+		<script src="../js/jquery.validate.min.js"></script>
         <script src="../js/popper.min.js"></script>
         <script src="../js/bootstrap.js"></script>
-        <script src="../js/instructor.area.js"></script>
+        
+		<script> 
+			
+			$(document).ready(function(){
+			$("#formulario").validate({
+			   rules: { 
+					name: { required: true, minlength: 3 }
+			   },
+			   messages: {
+					name: { required: " Nome - Obrigatório"}
+				}
+			});
+		});
+		</script>
     </body>
 </html>
